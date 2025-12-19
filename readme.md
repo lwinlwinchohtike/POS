@@ -46,15 +46,15 @@ Manage relationships on both sides of the supply chain.
 
 | Dashboard & Statistics | POS Checkout UI | Product Inventory |
 | :---: | :---: | :---: |
-| <img src="public/system-images/1.jpg" width="250"> | <img src="public/system-images/2.jpg" width="250"> | <img src="public/system-images/3.jpg" width="250"> |
+| <img src="public/system-images/1.JPG" width="250"> | <img src="public/system-images/2.JPG" width="250"> | <img src="public/system-images/3.JPG" width="250"> |
 
 | Stock Tracking Logs | Sales Reports | User Management |
 | :---: | :---: | :---: |
-| <img src="public/system-images/4.jpg" width="250"> | <img src="public/system-images/5.jpg" width="250"> | <img src="public/system-images/6.jpg" width="250"> |
+| <img src="public/system-images/4.JPG" width="250"> | <img src="public/system-images/5.JPG" width="250"> | <img src="public/system-images/6.JPG" width="250"> |
 
 | Category Lists | Purchase Reports | Purchase Checkout |
 | :---: | :---: | :---: |
-| <img src="public/system-images/7.jpg" width="250"> | <img src="public/system-images/8.jpg" width="250"> | <img src="public/system-images/9.jpg" width="250"> |
+| <img src="public/system-images/7.JPG" width="250"> | <img src="public/system-images/8.JPG" width="250"> | <img src="public/system-images/9.JPG" width="250"> |
 
 ---
 
