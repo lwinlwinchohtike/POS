@@ -1,51 +1,79 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# 🛒 Professional POS & Inventory Management System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-5.4-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
+[![AdminLTE](https://img.shields.io/badge/AdminLTE-v4-blue?style=for-the-badge)](https://adminlte.io)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## About Laravel
+A robust, full-stack Point of Sale (POS) solution designed to bridge the gap between inventory procurement and retail sales. Built with a focus on speed, data integrity, and a clean user experience.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ⭐ Key Highlights
+- **Real-time Inventory Tracking:** Automatically logs stock movement (In/Out) with every transaction.
+- **Dynamic POS Terminal:** A responsive, barcode-ready interface for rapid checkout.
+- **Procurement Workflow:** Integrated Purchase Order system to manage stock from various suppliers.
+- **Reporting Engine:** Generate instant insights into sales performance and stock history.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+## 🛠️ Technical Stack
+- **Backend:** PHP 5.6+ (Laravel 5.4 Framework)
+- **Frontend:** AdminLTE Dashboard Template, Bootstrap, jQuery
+- **Database:** MySQL (Relational Schema for Orders, Products, and Users)
+- **File Management:** Spatie MediaLibrary for optimized image handling.
+- **Data Tables:** Server-side processing via Yajra Datatables for handling 10,000+ records smoothly.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+## 📦 Core Modules
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+### 1. The POS Terminal
+The heart of the application. It features a visual product grid and barcode scanning. 
+* **Feature:** Auto-calculation of taxes and change due.
+* **UX:** One-click product addition to the cart.
 
-## Laravel Sponsors
+### 2. Inventory Intelligence
+Beyond simple counting, this module tracks the **History** of every item.
+* **Audit Trail:** Know exactly who sold or purchased what item and at what time.
+* **Categorization:** Multi-level categories (e.g., Foods, Drinks, Stationery).
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+### 3. Supplier & Customer CRM
+Manage relationships on both sides of the supply chain.
+* **Suppliers:** Track procurement costs and history.
+* **Customers:** Identify "Walk-in" vs. regular clients.
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+---
 
-## Contributing
+## 📷 Project Gallery
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+| Dashboard & Statistics | POS Checkout UI | Product Inventory |
+| :---: | :---: | :---: |
+| <img src="public/system-images/1.jpg" width="250"> | <img src="public/system-images/2.jpg" width="250"> | <img src="public/system-images/3.jpg" width="250"> |
 
-## Security Vulnerabilities
+| Stock Tracking Logs | Sales Reports | User Management |
+| :---: | :---: | :---: |
+| <img src="public/system-images/4.jpg" width="250"> | <img src="public/system-images/5.jpg" width="250"> | <img src="public/system-images/6.jpg" width="250"> |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+| Category Lists | Purchase Reports | Purchase Checkout |
+| :---: | :---: | :---: |
+| <img src="public/system-images/7.jpg" width="250"> | <img src="public/system-images/8.jpg" width="250"> | <img src="public/system-images/9.jpg" width="250"> |
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+## ⚙️ Installation & Setup
+
+1. **Clone & Install:**
+   ```bash
+   git clone https://github.com/lwinlwinchohtike/POS.git
+   composer install
+
+2. **Configure Env:**
+   ```bash
+    cp .env.example .env
+    php artisan key:generate
+
+3. **Database Setup:**
+    ```bash
+    php artisan migrate --seed
+
+4. **Symlink Storage:**
+    ```bash
+    php artisan storage:link
